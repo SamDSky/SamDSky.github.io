@@ -3,8 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - My Website</title>
+    <title>Contact Me - My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -12,6 +13,7 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -19,18 +21,18 @@
     </header>
     <main>
         <h2>Contact</h2>
-        <form id="contactForm">
+        <form id="contact-form">
             <label for="name">Name:</label>
             <input type="text" id="name" required>
             <label for="email">Email:</label>
             <input type="email" id="email" required>
-            <input type="submit" value="Submit">
+            <label for="message">Message:</label>
+            <textarea id="message" required></textarea>
+            <button type="submit">Send</button>
         </form>
-        <div id="formMessage"></div>
     </main>
     <footer>
-        <p>&copy; 2024 My Website</p>
+        <p>&copy; 2024 My Portfolio</p>
     </footer>
-    <script src="script.js"></script>
 </body>
 </html>
