@@ -1,36 +1,15 @@
-/* Reset some default styles */
+html, body {
+    height: 100%; /* Set full height for body */
+    margin: 0; /* Remove default margin */
+}
+
 body {
-    margin: 0;
-    font-family: Arial, sans-serif; /* Set a default font */
-}
-
-header {
-    background-color: black; /* Set the header background to black */
-    color: white; /* Set text color to white */
-    padding: 20px; /* Add some padding */
-}
-
-nav ul {
-    list-style-type: none; /* Remove bullet points */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
-}
-
-nav ul li {
-    display: inline; /* Display list items in a row */
-    margin-right: 15px; /* Add space between items */
-}
-
-nav a {
-    color: white; /* Make link text white */
-    text-decoration: none; /* Remove underline from links */
-}
-
-nav a:hover {
-    text-decoration: underline; /* Underline links on hover */
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
 }
 
 main {
+    flex: 1; /* Allow main content to grow and take available space */
     padding: 20px; /* Add padding to the main content */
 }
 
@@ -39,7 +18,5 @@ footer {
     color: white; /* Set text color to white */
     text-align: center; /* Center the footer text */
     padding: 10px; /* Add some padding */
-    position: relative; /* Ensure the footer stays at the bottom */
-    bottom: 0; /* Align at the bottom */
     width: 100%; /* Make the footer span the entire width */
 }
