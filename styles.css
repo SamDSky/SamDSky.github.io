@@ -8,11 +8,6 @@ body {
     flex-direction: column; /* Stack children vertically */
 }
 
-main {
-    flex: 1; /* Allow the main content to take up available space */
-    padding: 20px; /* Padding for main content */
-}
-
 header {
     background-color: black; /* Header background */
     color: white; /* Header text color */
@@ -39,4 +34,15 @@ nav a:hover {
     text-decoration: underline; /* Underline on hover */
 }
 
+main {
+    flex: 1; /* Allow main content to take available space */
+    padding: 20px; /* Padding for main content */
+}
+
 footer {
+    background-color: black; /* Footer background */
+    color: white; /* Footer text color */
+    text-align: center; /* Center the footer text */
+    padding: 10px; /* Padding for footer */
+    width: 100%; /* Full width */
+}
