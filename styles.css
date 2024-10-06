@@ -73,3 +73,28 @@ input[type="submit"] {
 input[type="submit"]:hover {
     background: #45a049;
 }
+header {
+    background-color: black; /* Set the background color to black */
+    color: white; /* Change the text color to white for contrast */
+    padding: 20px; /* Add some padding for spacing */
+}
+
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+}
+
+nav ul li {
+    display: inline; /* Display list items in a row */
+    margin-right: 15px; /* Add space between items */
+}
+
+nav a {
+    color: white; /* Make link text white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline links on hover for better visibility */
+}
+
