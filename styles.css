@@ -1,147 +1,49 @@
-/* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+html, body {
+    height: 100%; /* Full height for both html and body */
+    margin: 0; /* Remove default margin */
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack children vertically */
 }
 
 header {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+    background-color: black; /* Header background */
+    color: white; /* Header text color */
+    padding: 20px; /* Padding for header */
 }
 
-header .logo h1 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
 }
 
-header nav ul {
-    list-style-type: none;
-    padding: 0;
+nav ul li {
+    display: inline; /* Horizontal list items */
+    margin-right: 15px; /* Space between items */
 }
 
-header nav ul li {
-    display: inline;
-    margin-right: 20px;
+nav a {
+    color: white; /* Link color */
+    text-decoration: none; /* No underline */
 }
 
-header nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-header nav a:hover {
-    text-decoration: underline;
+nav a:hover {
+    text-decoration: underline; /* Underline on hover */
 }
 
 main {
-    padding: 30px;
-}
-
-#intro {
-    text-align: center;
-    margin-bottom: 50px;
-}
-
-#intro h2 {
-    font-size: 2.5rem;
-    color: #333;
-}
-
-#intro p {
-    font-size: 1.2rem;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-#intro .btn {
-    display: inline-block;
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-#intro .btn:hover {
-    background-color: #555;
-}
-
-#skills {
-    margin-top: 50px;
-}
-
-#skills h2 {
-    font-size: 2rem;
-    color: #333;
-    margin-bottom: 20px;
-}
-
-#skills ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-#skills ul li {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #444;
+    flex: 1; /* Allow main content to take available space */
+    padding: 20px; /* Padding for main content */
 }
 
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    margin-top: 50px;
-}
-
-/* Contact Form Styles */
-form {
-    max-width: 600px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-form label {
-    display: block;
-    font-weight: bold;
-    margin: 10px 0 5px;
-}
-
-form input, form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-}
-
-form button {
-    background-color: #333;
-    color: white;
-    padding: 10px 20px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form button:hover {
-    background-color: #555;
+    background-color: black; /* Footer background */
+    color: white; /* Footer text color */
+    text-align: center; /* Center the footer text */
+    padding: 10px; /* Padding for footer */
+    width: 100%; /* Full width */
+    margin-top: auto; /* Push footer to the bottom of the page */
 }
