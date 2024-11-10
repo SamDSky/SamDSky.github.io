@@ -1,38 +1,84 @@
-/* Base styling */
-body, html {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+/* Global Styles */
+body, h1, h2, p, ul, li, a, button, input, textarea {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    color: #333;
+}
+
+header, footer {
+    background-color: #1a73e8; /* Consistent blue color for header and footer */
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Main Content */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.home-images, .about-images {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+img.home-image, img.about-image {
+    max-width: 300px;
+    border-radius: 8px;
+}
+
+#skills ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    display: inline-block;
+}
+
+footer p {
+    margin: 10px 0;
+}
+/* Add to your styles.css or adjust as needed */
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
     flex: 1;
 }
 
-/* Styling for each section */
-.intro, .about-me, .projects {
-    text-align: center;
-    margin: 20px auto;
-    width: 80%;
-}
-
-/* Image styling */
-.about-me img, .intro img {
-    width: 150px;
-    border-radius: 8px;
-    margin-right: 20px;
-}
-
-/* Footer styling */
 footer {
+    background-color: #003366; /* Or another shade of blue you like */
+    color: white;
     text-align: center;
     padding: 10px;
-    background: #333;
-    color: #fff;
-    position: relative;
-    bottom: 0;
     width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+header, footer {
+    background-color: #0073e6; /* Replace with your preferred blue shade */
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
